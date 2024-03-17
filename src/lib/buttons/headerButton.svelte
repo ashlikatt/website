@@ -1,6 +1,12 @@
-<button>
-    <slot />
-</button>
+<script lang="ts">
+    export let href: string;
+</script>
+
+<a {href}>
+    <button>
+        <slot />
+    </button>
+</a>
 
 <style lang="scss">
     @import "../palette.scss";

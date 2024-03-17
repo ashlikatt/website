@@ -1,9 +1,13 @@
+<script lang="ts">
+    export let title : string;
+</script>
+
 <div>
     <h1>
-        <slot name="title" />
+        {title}
     </h1>
 
-    <slot name="buttons" />
+    <slot />
 </div>
 
 <style lang="scss">

@@ -6,31 +6,57 @@
 	import Section from "$lib/text/section.svelte";
 	import Paragraph from "$lib/text/paragraph.svelte";
 	import Pad from "$lib/text/pad.svelte";
+	import ExternalLink from "$lib/text/externalLink.svelte";
+	import Link from "$lib/text/link.svelte";
+	import PageData from "$lib/pageData.svelte";
 </script>
 
-<Body>
-	<Header>
-		<span slot="title">My Languages</span>
+<PageData title="Ashli's Site - Languages" desc="A collection of languages I've developed." />
 
-		<span slot="buttons">
-			<a href="/"><HeaderButton>Home</HeaderButton></a>
-			<DisabledHeaderButton>Languages</DisabledHeaderButton>
-			<a href="tools"><HeaderButton>Tools</HeaderButton></a>
-			<a href="games"><HeaderButton>Games</HeaderButton></a>
-		</span>
+<Body>
+	<Header title="My Languages">
+		<HeaderButton href="/">Home</HeaderButton>
+		<DisabledHeaderButton>Languages</DisabledHeaderButton>
+		<HeaderButton href="tools">Tools</HeaderButton>
 	</Header>
 
 	<Pad>
 		<Paragraph>
-			Welcome to my site! I'm Ashli. (she/they/it)<br>
-			I'm a lesbian kitty cat and mainly work with computers and programming.<br>
-			I enjoy logic puzzles and language design!
+			Here is a collection of languages I have made. Some are for programming in, and some are for other purposes. 
+			My esolangs page may be found 
+			<ExternalLink href="https://esolangs.org/wiki/User:Ashli_Katt">here</ExternalLink>
+			This page only shows highlights.
 		</Paragraph>
 	
-		<Section>Contact</Section>
+		<Section>Foreach</Section>
 		<Paragraph>
-			Discord: @ashli.dev<br>
-			Email: ashlikatt.public@gmail.com
+			Foreach is an esoteric programming language where the only control flow is for-each loops and function calls. 
+			The documentation and interpreter may be found <Link href="langs/foreach">here</Link>.
+		</Paragraph>
+
+		<Section>Cast</Section>
+		<Paragraph>
+			Cast is an esoteric programming language where the only operation is unsafely casting user-defined types between eachother. 
+			The language ended up being a strange form of functional programming.
+			The documentation and interpreter may be found <Link href="langs/cast">here</Link>.
+		</Paragraph>
+
+		<Section>DiamondFire Object Notation</Section>
+		<Paragraph>
+			DFON is very similar to JSON in syntax. It is intended to be a way for DiamondFire plots to easily represent and compile constant data.
+			The documentation and compiler may be found <Link href="langs/dfon">here</Link>.
+		</Paragraph>
+
+		<Section>Tupilled</Section>
+		<Paragraph>
+			Tupilled is an esoteric programming language I co-designed, where the only datatype is tuples and lambda expressions. It is inspired by functional programming principles.
+			The documentation may be found <ExternalLink href="https://esolangs.org/wiki/Tupilled">here</ExternalLink>. 
+		</Paragraph>
+
+		<Section>Bullshit</Section>
+		<Paragraph>
+			Bullshit is an esoteric programming language designed to be completely horrible, but not impossible, to work with.
+			The documentation may be found <ExternalLink href="https://esolangs.org/wiki/Bullshit">here</ExternalLink>.
 		</Paragraph>
 	</Pad>
 </Body>

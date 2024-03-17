@@ -16,6 +16,7 @@
         border-left-width: 1%;
         border-left-style: solid;
         margin-left: 1%;
+        margin-bottom: 3em;
         width:75%;
     }
 

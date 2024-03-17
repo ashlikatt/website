@@ -7,6 +7,7 @@
 	import Paragraph from "$lib/text/paragraph.svelte";
 	import Pad from "$lib/text/pad.svelte";
 	import HorizontalLine from "$lib/format/horizontalLine.svelte";
+	import PageData from "$lib/pageData.svelte";
 
 	import img_black_lives_matter from "$lib/assets/black-lives-matter.gif"
 	import img_anti_fascist from "$lib/assets/anti-fascist.gif"
@@ -30,16 +31,13 @@
 	import img_spotify from "$lib/assets/spotify.gif"
 </script>
 
-<Body>
-	<Header>
-		<span slot="title">Ashli's Site</span>
+<PageData title="Ashli's Site" desc="Hello, I'm Ashli, and welcome to my site." />
 
-		<span slot="buttons">
-			<DisabledHeaderButton>Home</DisabledHeaderButton>
-			<a href="langs"><HeaderButton>Languages</HeaderButton></a>
-			<a href="tools"><HeaderButton>Tools</HeaderButton></a>
-			<a href="games"><HeaderButton>Games</HeaderButton></a>
-		</span>
+<Body>
+	<Header title="Ashli's Site">
+		<DisabledHeaderButton>Home</DisabledHeaderButton>
+		<HeaderButton href="langs">Languages</HeaderButton>
+		<HeaderButton href="tools">Tools</HeaderButton>
 	</Header>
 
 	<Pad>

@@ -12,7 +12,7 @@
         height: 100%;
     }
 
-    .col > * {
+    .col > :global(*) {
         display:inline-block;
         flex: 1;
     }

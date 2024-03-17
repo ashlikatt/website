@@ -1,4 +1,10 @@
-<button>
+<script lang="ts">
+	import type { MouseEventHandler } from "svelte/elements";
+
+    export let click: MouseEventHandler<HTMLButtonElement>;
+</script>
+
+<button on:click={click}>
     <slot />
 </button>
 
@@ -18,12 +24,15 @@
         text-decoration: none;
 
 
-        border-bottom-color: $TEXT_ACCENT;
-        border-bottom-width: 1%;
-        border-bottom-style:solid;
+        border-color: $TEXT_ACCENT;
+        border-width: 1%;
+        border-style:solid;
         
         display:inline-block;
         transition:0.1s;
+
+        width: 100%;
+        height: 100%;
     }
 
     button:hover {
