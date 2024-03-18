@@ -38,7 +38,7 @@
 <label for={id}>
     <div>
         <Rows>
-            <Sized size=1>{name}</Sized>
+            <Sized size=1 padded>{name}</Sized>
             <Sized size=1><HorizontalLine /></Sized>
             <Sized size=10>
                 <span class="gray" bind:this={clickToEditNode}>(Click to select file)</span>
