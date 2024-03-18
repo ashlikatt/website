@@ -1,8 +1,7 @@
 <script>
-	import Rows from "./format/rows.svelte";
-	import Sized from "./format/sized.svelte";
-
+	import Sized from "$lib/format/sized.svelte";
 </script>
+
 <noscript>
     <span>
         <Sized size=1 padded>

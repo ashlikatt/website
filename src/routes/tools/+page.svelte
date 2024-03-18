@@ -1,6 +1,6 @@
 <script>
 	import Header from "$lib/header/header.svelte";
-	import Body from "$lib/body.svelte"
+	import Body from "$lib/core/body.svelte"
 	import HeaderButton from "$lib/buttons/headerButton.svelte";
 	import DisabledHeaderButton from "$lib/buttons/disabledHeaderButton.svelte";
 	import Section from "$lib/text/section.svelte";

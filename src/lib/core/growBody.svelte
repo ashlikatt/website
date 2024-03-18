@@ -5,7 +5,7 @@
 </div>
 
 <style lang="scss">
-    @import "./palette.scss";
+    @import "../palette.scss";
 
     .body {
         background-color: #333;

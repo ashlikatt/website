@@ -8,7 +8,7 @@
     import PageData from "$lib/pageData.svelte";
     import Sized from "$lib/format/sized.svelte";
     import PixelDisplay from "$lib/output/pixelDisplay.svelte";
-	import FileInput from "$lib/output/imageInput.svelte";
+	import FileInput from "$lib/input/imageInput.svelte";
 	import Button from "$lib/buttons/button.svelte";
 
     import { setInputFile, setPixelDisplay, generateButton } from "./generator.ts";

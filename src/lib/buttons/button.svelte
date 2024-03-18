@@ -2,10 +2,11 @@
 	import type { MouseEventHandler } from "svelte/elements";
 
     export let click: MouseEventHandler<HTMLButtonElement>;
+    export let element: HTMLButtonElement | null = null;
 </script>
 
-<button on:click={click}>
-    <slot />
+<button on:click={click} bind:this={element}>
+    <span><slot /></span>
 </button>
 
 <style lang="scss">
@@ -39,5 +40,23 @@
         cursor:pointer;
         background-color: $TEXT_ACCENT;
         transition:0.1s;
+    }
+
+    button:global(.disabled) {
+        opacity: 0.6;
+    }
+
+    button:global(.disabled):hover {
+        cursor: not-allowed;
+    }
+
+    button:global(.warning) {
+        border-color: #AA5;
+        color: #EE9;
+        text-decoration-line:line-through;
+    }
+
+    button:global(.warning):hover {
+        background-color: #AA5;
     }
 </style>

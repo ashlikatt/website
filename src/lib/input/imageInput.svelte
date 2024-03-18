@@ -6,11 +6,13 @@
     export let id: string;
     export let name: string;
     export let element: HTMLInputElement | null = null;
+    export let onUpdate: () => void = () => {}
 
     let clickToEditNode: HTMLElement | undefined  = undefined;
     let imgNode: HTMLImageElement | undefined = undefined;
 
     function updateImage() {
+        onUpdate();
         let fileReader = new FileReader();
 
         fileReader.addEventListener("load", x => {
