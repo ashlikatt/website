@@ -4,8 +4,8 @@
     @import "../palette.scss";
 
     hr {
-        border-color: $BODY_LINE_COLOR;
-        color: $BODY_LINE_COLOR;
+        border-color: $HORIZONTAL_LINE_COLOR;
+        color: $HORIZONTAL_LINE_COLOR;
         border-top-style: solid;
         border-top-width: 2px;
         margin-left:1%;

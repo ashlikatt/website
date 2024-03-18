@@ -28,7 +28,9 @@
 
 
 
-<style>
+<style lang="scss">
+    @import "../palette.scss";
+
     input {
         cursor: pointer;
     }
@@ -43,13 +45,13 @@
         box-sizing:border-box;
         width: 100%;
         height: 100%;
-        background-color: #111;
+        background-color: $RANGE_BACKGROUND_COLOR;
         border:none;
-        color:#DDD;
+        color: $RANGE_TEXT_COLOR;
         outline:none;
 
-        font-family: 'Verdana', Verdana, sans-serif;
-        font-weight:bold;
+        font-family: $GLOBAL_FONT;
+        font-weight: $GLOBAL_CODE_FONT_WEIGHT;
         font-size: 1em;
         text-align: center;
 
@@ -61,7 +63,7 @@
         appearance: none;
         width: 100%;
         height: 10px;
-        background: #A55;
+        background: $RANGE_TRACK_COLOR;
         outline: none;
     }
 
@@ -70,7 +72,7 @@
         appearance: none;
         width: 20px; /* Set a specific slider handle width */
         height: 40px; /* Slider handle height */
-        background: #FAA; 
+        background: $RANGE_THUMB_COLOR; 
         cursor: pointer; 
         outline:none;
         border:none;
@@ -80,7 +82,7 @@
     input[type="range"]::-moz-range-thumb {
         width: 15px; /* Set a specific slider handle width */
         height: 25px; /* Slider handle height */
-        background: #FAA; 
+        background: $RANGE_THUMB_COLOR; 
         outline:none;
         border:none;
         cursor: pointer; 

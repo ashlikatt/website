@@ -1,10 +1,88 @@
-$IMPORTANT_TEXT : #F88;
-$TEXT_ACCENT : #933;
+/// Palette - For internal use
 
-$BODY_TEXT : #999;
-$BODY_LINE_COLOR : #444;
+// Main colors
+$PASTEL_PINK            : #FAD;
+$PASTEL_DARK_PINK       : #B69;
+$PASTEL_BLUE            : #ACF;
+$PASTEL_DARK_BLUE       : #68B;
+$PASTEL_PURPLE          : #CAF;
+$PASTEL_DARK_PURPLE     : #86B;
 
-$LINK_COLOR : #F55;
+// Use sparingly
+$RED                    : #F77;
+$DARK_RED               : #B33;
+$PASTEL_YELLOW          : #FFA;
+$PASTEL_DARK_YELLOW     : #BB6;
 
-$SECTION_ARROW_COLOR : #777;
-$HEADER_ARROW_COLOR : #777;
+// Neutrals
+$DARK_GRAY              : #222;
+$GRAY                   : #666;
+$LIGHT_GRAY             : #999;
+$WHITE                  : #CCC;
+
+/// End Palette
+
+
+/// Style - For use by other scss
+
+// Core
+$NOSCRIPT_WARNING_BACKGROUND_COLOR  : $RED;
+$NOSCRIPT_WARNING_TEXT_COLOR        : $WHITE;
+$BODY_BACKGROUND_COLOR              : $GRAY;
+$BODY_SHADOW_COLOR                  : $DARK_GRAY;
+$SCROLLBAR_TRACK_COLOR              : $DARK_RED;
+$SCROLLBAR_THUMB_COLOR              : $RED;
+$PAGE_BACKGROUND_FALLBACK_COLOR     : $DARK_GRAY;
+$PAGE_BACKGROUND_URL                : url("$lib/assets/backdrop.png");
+
+// Header
+$HEADER_ARROW_COLOR     : $GRAY;
+$HEADER_TEXT_COLOR      : $PASTEL_PINK;
+$SECTION_ARROW_COLOR    : $GRAY;
+$SECTION_TEXT_COLOR     : $PASTEL_PINK;
+
+// Text
+$GLOBAL_FONT                : 'Verdana', Verdana, sans-serif;
+$GLOBAL_FONT_WEIGHT         : bold;
+$GLOBAL_CODE_FONT           : 'Verdana', Verdana, sans-serif;
+$GLOBAL_CODE_FONT_WEIGHT    : normal;
+
+$PARAGRAPH_TEXT_COLOR   : $LIGHT_GRAY;
+$PARAGRAPH_LINE_COLOR   : $GRAY;
+$LINK_COLOR             : $DARK_RED;
+
+$HORIZONTAL_LINE_COLOR  : $GRAY;
+
+// Buttons
+$SECTION_BUTTON_TEXT_COLOR      : $PASTEL_PINK;
+$SECTION_BUTTON_BORDER_COLOR    : $PASTEL_DARK_PINK;
+$BUTTON_TEXT_COLOR              : $PASTEL_PINK;
+$BUTTON_BORDER_COLOR            : $PASTEL_DARK_PINK;
+$WARN_BUTTON_TEXT_COLOR         : $PASTEL_YELLOW;
+$WARN_BUTTON_BORDER_COLOR       : $PASTEL_DARK_YELLOW;
+
+// Input
+$CODEBOX_BACKGROUND_COLOR       : $DARK_GRAY;
+$CODEBOX_TEXT_COLOR             : $RED;
+
+$RADIO_BACKGROUND_COLOR_OFF     : $GRAY;
+$RADIO_BACKGROUND_COLOR_ON      : $LIGHT_GRAY;
+$RADIO_TEXT_COLOR               : $RED;
+
+$IMAGE_INPUT_TEXT_COLOR         : $WHITE;
+$IMAGE_INPUT_TEXT_COLOR_ALT     : $GRAY;
+$IMAGE_INPUT_BACKGROUND_COLOR   : $DARK_GRAY;
+
+$RANGE_THUMB_COLOR              : $RED;
+$RANGE_TRACK_COLOR              : $DARK_RED;
+$RANGE_TEXT_COLOR               : $WHITE;
+$RANGE_BACKGROUND_COLOR         : $DARK_GRAY;
+
+// Output
+$PIXEL_DISPLAY_BACKGROUND_COLOR : $DARK_GRAY;
+
+$ALERT_BACKGROUND_COLOR         : $PASTEL_YELLOW;
+$ALERT_BACKGROUND_COLOR_ALT     : $PASTEL_DARK_YELLOW;
+$ALERT_TEXT_COLOR               : $DARK_GRAY;
+
+/// End Style

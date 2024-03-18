@@ -6,6 +6,8 @@
 <textarea spellcheck="false" {id}>{init}</textarea>
 
 <style lang="scss">
+    @import "../palette.scss";
+
     textarea {
         resize:none;
         padding: 10px 5px;
@@ -16,15 +18,15 @@
         box-sizing:border-box;
         width: 100%;
         height: 100%;
-        background-color: #111;
+        background-color: $CODEBOX_BACKGROUND_COLOR;
         border:none;
-        color:#DDD;
+        color: $CODEBOX_TEXT_COLOR;
         outline:none;
         overflow-y:auto;
         overflow-x:auto;
 
-        font-family:'Courier New', Courier, monospace;
-        font-weight:normal;
+        font-family: $GLOBAL_CODE_FONT;
+        font-weight: $GLOBAL_CODE_FONT_WEIGHT;
         font-size: 16px;
 
         border-radius: 4px;

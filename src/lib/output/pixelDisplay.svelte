@@ -6,6 +6,8 @@
 <p {id} bind:this={element}/>
 
 <style lang="scss">
+    @import "../palette.scss";
+
     p {
         resize: none;
         padding: 10px 10px;
@@ -19,13 +21,10 @@
         max-height: 100%;
         width: 0px;
         height: 0px;
-        background-color: #000;
+        background-color: $PIXEL_DISPLAY_BACKGROUND_COLOR;
         border: none;
-        color: #DDD;
         overflow: hidden;
         overflow-y: hidden;
-        font-family: 'Verdana', Verdana, sans-serif;
-        font-weight:bold;
         font-size: 20px;
         border-radius: 4px;
     }

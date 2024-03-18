@@ -6,13 +6,13 @@
     @import "../palette.scss";
 
     p {
-        color: $BODY_TEXT;
-        font-family: 'Verdana', Verdana, sans-serif;
-        font-weight:bold;
+        color: $PARAGRAPH_TEXT_COLOR;
+        font-family: $GLOBAL_FONT;
+        font-weight: $GLOBAL_FONT_WEIGHT;
         font-size: 20px;
         text-align:left;
         padding:1%;
-        border-left-color: $BODY_LINE_COLOR;
+        border-left-color: $PARAGRAPH_LINE_COLOR;
         border-left-width: 1%;
         border-left-style: solid;
         margin-left: 1%;

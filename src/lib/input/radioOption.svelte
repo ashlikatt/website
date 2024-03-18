@@ -9,7 +9,9 @@
 <input name={category} {value} {id} type="radio" {checked} />
 <label for={id} class="radioButton"><span>{name}</span></label>
 
-<style>
+<style lang="scss">
+    @import "../palette.scss";
+
     input[type="radio"] {
         display: none;
     }
@@ -21,12 +23,12 @@
         padding: 10px 5px;
         margin: 4px 4px;
         overflow:hidden;
-        background-color: #555;
-        color:#DDD;
+        background-color: $RADIO_BACKGROUND_COLOR_OFF;
+        color: $RADIO_TEXT_COLOR;
         outline:none;
 
-        font-family:'Courier New', Courier, monospace;
-        font-weight:normal;
+        font-family: $GLOBAL_FONT;
+        font-weight: $GLOBAL_CODE_FONT_WEIGHT;
         font-size: 16px;
         text-align: center;
 
@@ -35,7 +37,7 @@
     }
 
     input[type="radio"]:checked+label {
-        background-color: #888;
+        background-color: $RADIO_BACKGROUND_COLOR_ON;
         transition: 0.1s;
     }
 </style>

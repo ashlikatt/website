@@ -16,15 +16,15 @@
         border:none;
         padding: 0.75%;
 
-        font-family:'Verdana', Verdana, sans-serif;
-        font-weight:bold;
+        font-family: $GLOBAL_FONT;
+        font-weight: $GLOBAL_FONT_WEIGHT;
         font-size: 25px;
-        color: $IMPORTANT_TEXT;
+        color: $SECTION_BUTTON_TEXT_COLOR;
         text-align:center;
         text-decoration: none;
 
 
-        border-bottom-color: $TEXT_ACCENT;
+        border-bottom-color: $SECTION_BUTTON_BORDER_COLOR;
         border-bottom-width: 1%;
         border-bottom-style:solid;
         
@@ -36,7 +36,7 @@
 
     button:hover {
         cursor:pointer;
-        background-color: $TEXT_ACCENT;
+        background-color: $SECTION_BUTTON_BORDER_COLOR;
         transition:0.1s;
     }
 </style>

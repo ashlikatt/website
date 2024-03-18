@@ -52,6 +52,7 @@
 </label>
 
 <style lang="scss">
+    @import "../palette.scss";
 
     .imgcontainer {
         resize: none;
@@ -89,11 +90,11 @@
     }
 
     .gray {
-        font-family: 'Verdana', Verdana, sans-serif;
-        font-weight:bold;
+        font-family: $GLOBAL_FONT;
+        font-weight: $GLOBAL_CODE_FONT_WEIGHT;
         font-size: 1em;
         text-align: center;
-        color: #777;
+        color: $IMAGE_INPUT_TEXT_COLOR_ALT;
     }
 
     label {
@@ -110,13 +111,13 @@
         box-sizing:border-box;
         width: 100%;
         height: 100%;
-        background-color: #111;
+        background-color: $IMAGE_INPUT_BACKGROUND_COLOR;
         border:none;
-        color:#DDD;
+        color:$IMAGE_INPUT_TEXT_COLOR;
         outline:none;
 
-        font-family: 'Verdana', Verdana, sans-serif;
-        font-weight:bold;
+        font-family: $GLOBAL_FONT;
+        font-weight: $GLOBAL_CODE_FONT_WEIGHT;
         font-size: 1em;
         text-align: center;
 

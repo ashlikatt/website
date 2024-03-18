@@ -7,6 +7,8 @@
 </div>
 
 <style lang="scss">
+    @import "../palette.scss";
+
     div {
         display: flexbox;
         justify-content: flex-end;
@@ -19,9 +21,9 @@
     }
 
     div > :global(*) {
-        background-color:#FFAA55;
-        color:#000000;
-        border-left-color:#995500;
+        background-color: $ALERT_BACKGROUND_COLOR;
+        color: $ALERT_TEXT_COLOR;
+        border-left-color: $ALERT_BACKGROUND_COLOR_ALT;
         border-left-width: 20%;
         border-left-style: solid;
         width:inherit 80%;

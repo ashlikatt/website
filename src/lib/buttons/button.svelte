@@ -17,15 +17,15 @@
         border:none;
         padding: 0.75%;
 
-        font-family:'Verdana', Verdana, sans-serif;
-        font-weight:bold;
+        font-family: $GLOBAL_FONT;
+        font-weight: $GLOBAL_FONT_WEIGHT;
         font-size: 25px;
-        color: $IMPORTANT_TEXT;
+        color: $BUTTON_TEXT_COLOR;
         text-align:center;
         text-decoration: none;
 
 
-        border-color: $TEXT_ACCENT;
+        border-color: $BUTTON_BORDER_COLOR;
         border-width: 1%;
         border-style:solid;
         
@@ -38,7 +38,7 @@
 
     button:hover {
         cursor:pointer;
-        background-color: $TEXT_ACCENT;
+        background-color: $BUTTON_BORDER_COLOR;
         transition:0.1s;
     }
 
@@ -51,12 +51,12 @@
     }
 
     button:global(.warning) {
-        border-color: #AA5;
-        color: #EE9;
+        border-color: $WARN_BUTTON_BORDER_COLOR;
+        color: $WARN_BUTTON_TEXT_COLOR;
         text-decoration-line:line-through;
     }
 
     button:global(.warning):hover {
-        background-color: #AA5;
+        background-color: $WARN_BUTTON_BORDER_COLOR;
     }
 </style>

@@ -7,9 +7,9 @@
 
     h2 {
         display:inline;
-        color:#F88;
-        font-family:'Verdana', Verdana, sans-serif;
-        font-weight:bold;
+        color:$SECTION_TEXT_COLOR;
+        font-family: $GLOBAL_FONT;
+        font-weight: $GLOBAL_FONT_WEIGHT;
         font-size: 40px;
         text-align:left;
         padding-left:1%;

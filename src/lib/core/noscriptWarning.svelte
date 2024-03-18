@@ -11,6 +11,8 @@
 </noscript>
 
 <style lang="scss">
+    @import "../palette.scss";
+
     span {
         display: -webkit-box;
         display: -webkit-flex;
@@ -23,9 +25,9 @@
         display: flexbox;
         justify-content: center; /* Align horizontal */
         align-items: center; /* Align vertical */
-        background-color: #F55;
-        color: #FFF;
-        font-family:'Verdana', Verdana, sans-serif;
+        background-color: $NOSCRIPT_WARNING_BACKGROUND_COLOR;
+        color: $WHITE;
+        font-family: $GLOBAL_FONT;
         font-size: 200%;
     }
 </style>

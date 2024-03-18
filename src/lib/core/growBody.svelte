@@ -8,11 +8,11 @@
     @import "../palette.scss";
 
     .body {
-        background-color: #333;
+        background-color: $BODY_BACKGROUND_COLOR;
         border-radius: 4px;
         margin: 2% 5%;
         padding: 10px;
-        box-shadow: 1px 1px 5px 5px #222;
+        box-shadow: 1px 1px 5px 5px $BODY_SHADOW_COLOR;
         flex-grow: 1;
         height:100%;
         display:flex;
@@ -28,12 +28,12 @@
     }
 
     :global(html) {
-        scrollbar-color: #B00 #500;
-        background-color: #222;
+        scrollbar-color: $SCROLLBAR_THUMB_COLOR $SCROLLBAR_TRACK_COLOR;
+        background-color: $PAGE_BACKGROUND_FALLBACK_COLOR;
         margin: 0px;
         padding: 0px;
 
-        background-image: url("$lib/assets/backdrop.png");
+        background-image: $PAGE_BACKGROUND_URL;
     }
 
     :global(body) {
@@ -47,10 +47,10 @@
     }
 
     :global(::-webkit-scrollbar-track) {
-        background-color: #500;
+        background-color: $SCROLLBAR_TRACK_COLOR;
     }
 
     :global(::-webkit-scrollbar-thumb) {
-        background-color: #B00;
+        background-color: $SCROLLBAR_THUMB_COLOR;
     }
 </style>
