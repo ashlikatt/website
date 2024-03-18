@@ -8,7 +8,7 @@
 <style lang="scss">
     p {
         resize: none;
-        padding: 10px 5px;
+        padding: 10px 10px;
         margin: 0px 0px;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;

@@ -55,7 +55,7 @@
 
     .imgcontainer {
         resize: none;
-        padding: 10px 5px;
+        padding: 10px 10px;
         margin: 0px 0px;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
@@ -102,7 +102,7 @@
 
     div {
         resize:none;
-        padding: 10px 5px;
+        padding: 0px 0px;
         margin: 0px 0px;
         overflow:hidden;
         -webkit-box-sizing:border-box;
