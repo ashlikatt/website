@@ -16,7 +16,7 @@
         float:left;
         position:absolute;
         width:20%;
-        height:100%;
+        height:90%;
         pointer-events: none;
     }
 

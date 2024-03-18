@@ -9,10 +9,11 @@
 
     .body {
         background-color: $BODY_BACKGROUND_COLOR;
-        border-radius: 4px;
         margin: 2% 5%;
         padding: 10px;
-        box-shadow: 1px 1px 5px 5px $BODY_SHADOW_COLOR;
+        border-width: 8px;
+        border-color: $BODY_BACKGROUND_COLOR_ALT;
+        border-style:outset;
         flex-grow: 1;
         height:100%;
         display:flex;
@@ -29,6 +30,7 @@
 
     :global(html) {
         scrollbar-color: $SCROLLBAR_THUMB_COLOR $SCROLLBAR_TRACK_COLOR;
+        scrollbar-width: 12px;
         background-color: $PAGE_BACKGROUND_FALLBACK_COLOR;
         margin: 0px;
         padding: 0px;

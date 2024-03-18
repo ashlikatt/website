@@ -13,8 +13,8 @@
         content: "";
         background-image: url("$lib/assets/external_link.png");
         background-size: cover;
-        width: 16px;
-        height: 16px;
+        width: 1ch;
+        height: 1ch;
         margin-right: 5px;
         display:inline-block;
     }

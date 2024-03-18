@@ -18,7 +18,7 @@
 
         font-family: $GLOBAL_FONT;
         font-weight: $GLOBAL_FONT_WEIGHT;
-        font-size: 25px;
+        font-size: 1.5rem;
         color: $SECTION_BUTTON_TEXT_COLOR;
         text-align:center;
         text-decoration: none;
@@ -38,5 +38,6 @@
         cursor:pointer;
         background-color: $SECTION_BUTTON_BORDER_COLOR;
         transition:0.1s;
+        color:$SECTION_BUTTON_FADE_COLOR;
     }
 </style>

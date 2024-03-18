@@ -28,6 +28,6 @@
         background-color: $NOSCRIPT_WARNING_BACKGROUND_COLOR;
         color: $WHITE;
         font-family: $GLOBAL_FONT;
-        font-size: 200%;
+        font-size: 2rem;
     }
 </style>

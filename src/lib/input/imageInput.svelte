@@ -91,8 +91,8 @@
 
     .gray {
         font-family: $GLOBAL_FONT;
-        font-weight: $GLOBAL_CODE_FONT_WEIGHT;
-        font-size: 1em;
+        font-weight: $GLOBAL_FONT_WEIGHT;
+        font-size: 1.5rem;
         text-align: center;
         color: $IMAGE_INPUT_TEXT_COLOR_ALT;
     }
@@ -117,8 +117,8 @@
         outline:none;
 
         font-family: $GLOBAL_FONT;
-        font-weight: $GLOBAL_CODE_FONT_WEIGHT;
-        font-size: 1em;
+        font-weight: $GLOBAL_FONT_WEIGHT;
+        font-size: 1.5rem;
         text-align: center;
 
         border-radius: 4px;

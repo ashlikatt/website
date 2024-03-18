@@ -10,11 +10,11 @@
         color:$SECTION_TEXT_COLOR;
         font-family: $GLOBAL_FONT;
         font-weight: $GLOBAL_FONT_WEIGHT;
-        font-size: 40px;
+        font-size: 1.75rem;
         text-align:left;
         padding-left:1%;
         padding-right:1%;
-        font-size: 25px;
+        margin-top:0;
     }
 
     h2::before {

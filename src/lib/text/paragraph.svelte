@@ -9,7 +9,7 @@
         color: $PARAGRAPH_TEXT_COLOR;
         font-family: $GLOBAL_FONT;
         font-weight: $GLOBAL_FONT_WEIGHT;
-        font-size: 20px;
+        font-size: 1.25rem;
         text-align:left;
         padding:1%;
         border-left-color: $PARAGRAPH_LINE_COLOR;
@@ -17,6 +17,7 @@
         border-left-style: solid;
         margin-left: 1%;
         margin-bottom: 3em;
+        margin-top:0.5em;
         width:75%;
     }
 

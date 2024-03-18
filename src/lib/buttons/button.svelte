@@ -19,7 +19,7 @@
 
         font-family: $GLOBAL_FONT;
         font-weight: $GLOBAL_FONT_WEIGHT;
-        font-size: 25px;
+        font-size: 1.5rem;
         color: $BUTTON_TEXT_COLOR;
         text-align:center;
         text-decoration: none;
@@ -39,6 +39,7 @@
     button:hover {
         cursor:pointer;
         background-color: $BUTTON_BORDER_COLOR;
+        color: $BUTTON_FADE_COLOR;
         transition:0.1s;
     }
 

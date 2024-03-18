@@ -23,8 +23,11 @@
         height: 0px;
         background-color: $PIXEL_DISPLAY_BACKGROUND_COLOR;
         border: none;
+        color: #DDD;
         overflow: hidden;
         overflow-y: hidden;
+        font-family: 'Verdana', Verdana, sans-serif;
+        font-weight:bold;
         font-size: 20px;
         border-radius: 4px;
     }

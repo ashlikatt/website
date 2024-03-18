@@ -27,7 +27,7 @@
 
         font-family: $GLOBAL_CODE_FONT;
         font-weight: $GLOBAL_CODE_FONT_WEIGHT;
-        font-size: 16px;
+        font-size: 1rem;
 
         border-radius: 4px;
     }

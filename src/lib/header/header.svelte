@@ -18,10 +18,11 @@
         color:$HEADER_TEXT_COLOR;
         font-family: $GLOBAL_FONT;
         font-weight: $GLOBAL_FONT_WEIGHT;
-        font-size: 40px;
+        font-size: 2.6rem;
         text-align:left;
         padding-left:1%;
         padding-right:1%;
+        margin-bottom:0;
     }
 
     h1::before {

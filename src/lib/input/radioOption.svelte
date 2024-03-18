@@ -23,21 +23,23 @@
         padding: 10px 5px;
         margin: 4px 4px;
         overflow:hidden;
-        background-color: $RADIO_BACKGROUND_COLOR_OFF;
-        color: $RADIO_TEXT_COLOR;
-        outline:none;
+        color: $RADIO_TEXT_COLOR_OFF;
+
+        border-color: $RADIO_BACKGROUND_COLOR;
+        border-width: 1%;
+        border-style:solid;
 
         font-family: $GLOBAL_FONT;
-        font-weight: $GLOBAL_CODE_FONT_WEIGHT;
-        font-size: 16px;
+        font-weight: $GLOBAL_FONT_WEIGHT;
+        font-size: 1.5rem;
         text-align: center;
-
-        border-radius: 4px;
+        
         cursor:pointer;
     }
 
     input[type="radio"]:checked+label {
-        background-color: $RADIO_BACKGROUND_COLOR_ON;
+        background-color: $RADIO_BACKGROUND_COLOR;
         transition: 0.1s;
+        color: $RADIO_TEXT_COLOR_ON
     }
 </style>
