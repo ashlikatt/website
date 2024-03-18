@@ -12,7 +12,6 @@
     let imgNode: HTMLImageElement | undefined = undefined;
 
     function updateImage() {
-        onUpdate();
         let fileReader = new FileReader();
 
         fileReader.addEventListener("load", x => {
@@ -20,6 +19,7 @@
                 imgNode.src = fileReader.result as string;
                 imgNode.hidden = false;
                 clickToEditNode.hidden = true;
+                onUpdate();
             }
         });
 
