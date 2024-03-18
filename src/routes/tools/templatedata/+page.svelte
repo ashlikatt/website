@@ -1,7 +1,7 @@
 <script lang="ts">
     import Header from "$lib/header/header.svelte";
-    import GrowBody from "$lib/growBody.svelte";
-    import PageData from "$lib/pageData.svelte";
+    import GrowBody from "$lib/core/growBody.svelte";
+    import PageData from "$lib/core/pageData.svelte";
 	import HeaderButton from "$lib/buttons/headerButton.svelte";
 	import Rows from "$lib/format/rows.svelte";
 	import Columns from "$lib/format/columns.svelte";
@@ -12,7 +12,7 @@
 
     import { onMount } from "svelte";
     import { jsonToDataButton, dataToJsonButton, recodeButton, setDataBox, setJsonBox, setAlertBox } from "./code.ts";
-	import NoscriptWarning from "$lib/noscriptWarning.svelte";
+	import NoscriptWarning from "$lib/core/noscriptWarning.svelte";
 	import Alertbox from "$lib/output/alertbox.svelte";
 
     onMount(() => {

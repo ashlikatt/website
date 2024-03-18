@@ -2,10 +2,10 @@
     import HeaderButton from "$lib/buttons/headerButton.svelte";
 	import Columns from "$lib/format/columns.svelte";
 	import Rows from "$lib/format/rows.svelte";
-    import GrowBody from "$lib/growBody.svelte";
+    import GrowBody from "$lib/core/growBody.svelte";
 	import Header from "$lib/header/header.svelte";
-	import NoscriptWarning from "$lib/noscriptWarning.svelte";
-    import PageData from "$lib/pageData.svelte";
+	import NoscriptWarning from "$lib/core/noscriptWarning.svelte";
+    import PageData from "$lib/core/pageData.svelte";
     import Sized from "$lib/format/sized.svelte";
     import PixelDisplay from "$lib/output/pixelDisplay.svelte";
 	import FileInput from "$lib/input/imageInput.svelte";

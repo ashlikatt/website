@@ -9,7 +9,7 @@
 	import Link from "$lib/text/link.svelte";
 	import PageLink from "$lib/text/pageLink.svelte";
 	import ExternalLink from "$lib/text/externalLink.svelte";
-	import PageData from "$lib/pageData.svelte";
+	import PageData from "$lib/core/pageData.svelte";
 </script>
 
 <PageData title="Ashli's Site - Tools" desc="A collections of tools I've made." />

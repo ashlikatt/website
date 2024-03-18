@@ -7,7 +7,7 @@
 	import Paragraph from "$lib/text/paragraph.svelte";
 	import Pad from "$lib/text/pad.svelte";
 	import HorizontalLine from "$lib/format/horizontalLine.svelte";
-	import PageData from "$lib/pageData.svelte";
+	import PageData from "$lib/core/pageData.svelte";
 
 	import img_black_lives_matter from "$lib/assets/black-lives-matter.gif"
 	import img_anti_fascist from "$lib/assets/anti-fascist.gif"

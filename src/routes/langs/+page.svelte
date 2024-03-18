@@ -8,7 +8,7 @@
 	import Pad from "$lib/text/pad.svelte";
 	import ExternalLink from "$lib/text/externalLink.svelte";
 	import Link from "$lib/text/link.svelte";
-	import PageData from "$lib/pageData.svelte";
+	import PageData from "$lib/core/pageData.svelte";
 </script>
 
 <PageData title="Ashli's Site - Languages" desc="A collection of languages I've developed." />
