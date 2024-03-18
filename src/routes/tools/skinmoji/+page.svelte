@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import HeaderButton from "$lib/buttons/headerButton.svelte";
 	import Columns from "$lib/format/columns.svelte";
 	import Rows from "$lib/format/rows.svelte";
@@ -8,17 +8,19 @@
     import PageData from "$lib/pageData.svelte";
     import Sized from "$lib/format/sized.svelte";
     import PixelDisplay from "$lib/output/pixelDisplay.svelte";
-	import FileInput from "$lib/output/fileInput.svelte";
+	import FileInput from "$lib/output/imageInput.svelte";
 	import Button from "$lib/buttons/button.svelte";
 
     import { setInputFile, setPixelDisplay, generateButton } from "./generator.ts";
 	import RadioOption from "$lib/input/radioOption.svelte";
-	import { onMount } from "svelte";
 
-    onMount(() => {
-        setInputFile(document.getElementById("inputfile"))
-        setPixelDisplay(document.getElementById("pixelDisplay"))
-    })
+    let inputFile: any;
+    let pixelDisplay: any;
+
+    $: {
+        setInputFile(inputFile);
+        setPixelDisplay(pixelDisplay)
+    }
 </script>
 
 <PageData title="Minecraft Icon Generator" desc="Tool to generate front-facing icons of minecraft skins." />
@@ -33,13 +35,15 @@
     <Columns>
         <Sized size=1>
             <Rows>
-                <Sized size=1 padded>
-                    <FileInput name="Skin File:" id="inputfile" />
+                <Sized size=4 padded>
+                    <FileInput name="Skin File:" id="inputfile" bind:element={inputFile}/>
                 </Sized>
                 <Sized size=1 padded>
-                    <RadioOption category="skin_type" id="wide_skin" value="Wide" name="Wide Skin" checked />
-                    <RadioOption category="skin_type" id="slim_skin" value="Slim" name="Slim Skin" />
-                    <!-- TODO Add support for legacy skins (like Electrosolt) -->
+                    <Columns>
+                        <RadioOption category="skin_type" id="wide_skin" value="Wide" name="Wide Skin" checked />
+                        <RadioOption category="skin_type" id="slim_skin" value="Slim" name="Slim Skin" />
+                        <!-- TODO Add support for legacy skins (like Electrosolt) -->
+                    </Columns>
                 </Sized>
                 <Sized size=1 padded>
                     <Button click={generateButton} >Generate</Button>
@@ -47,7 +51,7 @@
             </Rows>
         </Sized>
         <Sized size=1 padded>
-            <PixelDisplay id="pixelDisplay" />
+            <PixelDisplay id="pixelDisplay" bind:element={pixelDisplay}/>
         </Sized>
     </Columns>
 </GrowBody>

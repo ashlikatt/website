@@ -7,7 +7,7 @@
 </script>
 
 <input name={category} {value} {id} type="radio" {checked} />
-<label for={id} class="radioButton">{name}</label>
+<label for={id} class="radioButton"><span>{name}</span></label>
 
 <style>
     input[type="radio"] {
@@ -15,7 +15,9 @@
     }
 
     label {
-        display: block;
+        display: flex;
+        justify-content: center; /* Align horizontal */
+        align-items: center; /* Align vertical */
         padding: 10px 5px;
         margin: 4px 4px;
         overflow:hidden;
@@ -29,6 +31,7 @@
         text-align: center;
 
         border-radius: 4px;
+        cursor:pointer;
     }
 
     input[type="radio"]:checked+label {

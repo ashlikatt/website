@@ -1,8 +1,9 @@
 <script lang="ts">
     export let id: string;
+    export let element: Element | null = null;
 </script>
 
-<p {id} />
+<p {id} bind:this={element}/>
 
 <style lang="scss">
     p {
@@ -23,9 +24,9 @@
         color: #DDD;
         overflow: hidden;
         overflow-y: hidden;
-        font-family: 'Courier New', Courier, monospace;
-        font-weight: normal;
-        font-size: 16px;
+        font-family: 'Verdana', Verdana, sans-serif;
+        font-weight:bold;
+        font-size: 20px;
         border-radius: 4px;
     }
 

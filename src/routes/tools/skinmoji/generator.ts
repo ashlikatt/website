@@ -1,5 +1,5 @@
-var inputFile: any;
-var pixelDisplay: any;
+var inputFile: any = null;
+var pixelDisplay: any = null;
 
 export function setInputFile(x: any) { inputFile = x; }
 export function setPixelDisplay(x: any) { pixelDisplay = x; }
@@ -85,7 +85,7 @@ const WIDE = [
  */
 export async function generateButton() {
     try {
-        const file = inputFile.files[0];
+        const file = inputFile.files?.[0];
         const selectedType = (document.querySelector('input[name="skin_type"]:checked') as HTMLInputElement)?.value;
         const segments = selectedType === "Slim" ? THIN : WIDE;
         const display = pixelDisplay;

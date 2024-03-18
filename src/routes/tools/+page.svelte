@@ -32,12 +32,6 @@
 			A small CLI to interact with the format may be found <Link href="tools/mapplanner">here</Link>. 
 		</Paragraph>
 
-		<Section>Bézier Curve Editor</Section>
-		<Paragraph>
-			This tool lets you play around with bézier curves.
-			It may be found <PageLink href="tools/bezier">here</PageLink>.
-		</Paragraph>
-
 		<Section>Virtual To-Do List</Section>
 		<Paragraph>
 			This is a minimalist tool made for a friend. It allows you to create "tasks" which you can then
