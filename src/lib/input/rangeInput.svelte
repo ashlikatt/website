@@ -7,6 +7,7 @@
     export let value: string;
     export let id: string;
     export let name: string;
+    export let step: string;
 
     export let onUpdate: () => void = () => {}
 
@@ -20,7 +21,7 @@
                 {name}
             </Sized>
             <Sized size=1 padded>
-                <input type="range" {min} {max} {value} {id} bind:this={element} on:change={onUpdate}/>
+                <input type="range" {min} {max} {value} {id} {step} bind:this={element} on:change={onUpdate}/>
             </Sized>
         </Rows>
     </div>
@@ -87,5 +88,33 @@
         border:none;
         cursor: pointer; 
         border-radius: 0%;
+    }
+
+
+    input[type='range']::-webkit-slider-runnable-track {
+        height: 10px;
+        -webkit-appearance: none;
+        color: $RANGE_TRACK_COLOR;
+        margin-top: -1px;
+    }
+    
+
+    /** FF*/
+    input[type="range"]::-moz-range-progress {
+        background-color: $RANGE_TRACK_COLOR_ACTIVE; 
+        height: 10px;
+    }
+    input[type="range"]::-moz-range-track {  
+        background-color: $RANGE_TRACK_COLOR;
+        height: 10px;
+    }
+    /* IE*/
+    input[type="range"]::-ms-fill-lower {
+        background-color: $RANGE_TRACK_COLOR_ACTIVE; 
+        height: 10px;
+    }
+    input[type="range"]::-ms-fill-upper {  
+        background-color: $RANGE_TRACK_COLOR;
+        height: 10px;
     }
 </style>

@@ -55,7 +55,7 @@
         </Rows>
         <Rows>
             <Sized size = 1 padded>
-                <RangeInput min=1 max=100 value=3 id="inputrange" name="Quality" bind:element={inputRangeDOM} onUpdate={inputChanged}/>
+                <RangeInput min=1 max=100 value=3 step=1 id="inputrange" name="Quality" bind:element={inputRangeDOM} onUpdate={inputChanged}/>
             </Sized>
             <Sized size = 18 padded>
                 <PixelDisplay id="pixelDisplay" bind:element={pixelDisplay}/>
