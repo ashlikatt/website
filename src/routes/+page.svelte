@@ -29,6 +29,7 @@
 	import img_yumenikki from "$lib/assets/yumenikki.gif"
 	import img_jerma from "$lib/assets/jerma.gif"
 	import img_spotify from "$lib/assets/spotify.gif"
+	import InlineCode from "$lib/text/inlineCode.svelte";
 </script>
 
 <PageData title="Ashli's Site" desc="Hello, I'm Ashli, and welcome to my site." />
@@ -49,8 +50,8 @@
 	
 		<Section>Contact</Section>
 		<Paragraph>
-			Discord: @ashli.dev<br>
-			Email: ashlikatt.public@gmail.com
+			Discord: <InlineCode>@ashli.dev</InlineCode><br>
+			Email: <InlineCode>ashlikatt.public@gmail.com</InlineCode>
 		</Paragraph>
 
 		<HorizontalLine />

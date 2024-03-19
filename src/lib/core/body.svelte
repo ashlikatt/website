@@ -13,7 +13,8 @@
         padding: 10px;
         border-width: 8px;
         border-color: $BODY_BACKGROUND_COLOR_ALT;
-        border-style:outset;
+        border-style:double;
+        box-shadow: 15px 15px #00000033;
     }
 
     .mainContainer {
