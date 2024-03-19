@@ -25,7 +25,7 @@
         overflow:hidden;
         color: $RADIO_TEXT_COLOR_OFF;
 
-        border-color: $RADIO_BACKGROUND_COLOR;
+        border-color: $RADIO_BACKGROUND_COLOR_OFF;
         border-width: 1%;
         border-style:solid;
 
@@ -34,12 +34,21 @@
         font-size: 1.5rem;
         text-align: center;
         
+        transition: 0.1s;
+        
         cursor:pointer;
     }
 
-    input[type="radio"]:checked+label {
-        background-color: $RADIO_BACKGROUND_COLOR;
+    label:hover {
+        background-color: $RADIO_HOVER_COLOR;
         transition: 0.1s;
-        color: $RADIO_TEXT_COLOR_ON
+        color: $RADIO_TEXT_COLOR_HOVER
+    }
+    
+    input[type="radio"]:checked+label {
+        background-color: $RADIO_BACKGROUND_COLOR_ON;
+        transition: 0.1s;
+        color: $RADIO_TEXT_COLOR_ON;
+        border-color: $RADIO_BACKGROUND_COLOR_ON;
     }
 </style>
