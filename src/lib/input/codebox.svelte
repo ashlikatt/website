@@ -1,9 +1,11 @@
 <script lang="ts">
     export let id: string;
     export let init: string;
+
+    export let element: HTMLTextAreaElement | undefined = undefined;
 </script>
 
-<textarea spellcheck="false" {id}>{init}</textarea>
+<textarea spellcheck="false" bind:this={element} {id}>{init}</textarea>
 
 <style lang="scss">
     @import "../palette.scss";

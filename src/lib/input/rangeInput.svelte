@@ -90,6 +90,7 @@
         border-radius: 0%;
     }
 
+    // Thank you random stackoverflow post, also pretty sure this won't work for chrome lol
 
     input[type='range']::-webkit-slider-runnable-track {
         height: 10px;
