@@ -17,8 +17,9 @@
         fileReader.addEventListener("load", x => {
             if (imgNode && clickToEditNode) {
                 imgNode.src = fileReader.result as string;
+                imgNode.classList.remove("noSize");
                 imgNode.hidden = false;
-                clickToEditNode.hidden = true;
+                clickToEditNode.classList.add("noSize");
                 onUpdate();
             }
         });
@@ -29,8 +30,9 @@
                 fileReader.readAsDataURL(file);
             } 
 
+            imgNode.classList.add("noSize");
             imgNode.hidden = true;
-            clickToEditNode.hidden = false;
+            clickToEditNode.classList.remove("noSize");
         }
     }
 </script>
@@ -38,12 +40,12 @@
 <label for={id}>
     <div>
         <Rows>
-            <Sized size=1 padded>{name}</Sized>
-            <Sized size=1><HorizontalLine /></Sized>
-            <Sized size=10>
-                <span class="gray" bind:this={clickToEditNode}>(Click to select file)</span>
-                <div class="imgcontainer">
-                    <img src="" bind:this={imgNode} alt="The inputted file" hidden/>
+            <Sized size=1 padded><span class="vertCenter"><span class="internal">{name}</span></span></Sized>
+            <Sized size=0><HorizontalLine /></Sized>
+            <Sized size=4>
+                <div class="imgcontainer vertCenter">
+                    <span class="gray" bind:this={clickToEditNode}>(Click to select file)</span>
+                    <img src="" bind:this={imgNode} alt="The inputted file" class="noSize" hidden/>
                 </div>
             </Sized>
         </Rows>
@@ -53,6 +55,35 @@
 
 <style lang="scss">
     @import "../palette.scss";
+
+    span:global(.noSize) {
+        display: none;
+        width:0px;
+        height:0px;
+    }
+
+    div:global(.noSize) {
+        display: none;
+        width:0px;
+        height:0px;
+    }
+
+    .vertCenter {
+        display: flex;
+        justify-content: center; /* Align horizontal */
+        align-items: center; /* Align vertical */
+        justify-self: center;
+        flex-grow:1;
+        width:100%;
+        height:100%;
+        margin:0px;
+        padding:0px;
+    }
+
+    .internal {
+        margin: auto;
+        justify-self: center;
+    }
 
     .imgcontainer {
         resize: none;
