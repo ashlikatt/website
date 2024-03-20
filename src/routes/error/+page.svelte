@@ -5,7 +5,6 @@
 	import Body from "$lib/core/body.svelte";
 	import PageData from "$lib/core/pageData.svelte";
 	import Header from "$lib/header/header.svelte";
-	import StaticImage from "$lib/images/staticImage.svelte";
 	import Paragraph from "$lib/text/paragraph.svelte";
 
     import img_err from "$lib/assets/noway.gif";
@@ -15,7 +14,7 @@
 <PageData title="Error!" desc="Error page lol" />
 
 <Body>
-    <Header title={`${$page.status}: ${$page.error?.message}`}>
+    <Header title="404: Page Not Found">
         <HeaderButton href="">Home</HeaderButton>
     </Header>
     <Paragraph>
