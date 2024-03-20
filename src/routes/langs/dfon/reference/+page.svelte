@@ -194,9 +194,9 @@
             |
             |    // Stores mineable block information
             |    blockData: {
-            |              'stone': block(40, 0, ['stone'])
-            |           'andesite': block(60, 1, ['stone', 'iron_scrap', 'none'])
-            |        'cobblestone': block(80, 2, ['stone', 'gold_scrap', 'none'])
+            |              'stone': block(40, 0, ['stone']),
+            |           'andesite': block(60, 1, ['stone', 'iron_scrap', 'none']),
+            |        'cobblestone': block(80, 2, ['stone', 'gold_scrap', 'none']),
             |    },
             |}
         `}/>
