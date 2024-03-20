@@ -10,11 +10,26 @@
 	import PageLink from "$lib/text/pageLink.svelte";
 	import ExternalLink from "$lib/text/externalLink.svelte";
 	import PageData from "$lib/core/pageData.svelte";
+	import StaticImage from "$lib/images/staticImage.svelte";
+	import BottomImage from "$lib/images/bottomImage.svelte";
+
+	import img_bleh from "$lib/assets/catspit.gif";
+	import img_slug1 from "$lib/assets/tooluse.gif";
+	import img_slug2 from "$lib/assets/grub_cheese.gif"
 </script>
 
 <PageData title="Ashli's Site - Tools" desc="A collections of tools I've made." />
 
 <Body>
+	<a href="https://rainworldgame.com/" target="_blank" rel="external">
+		<StaticImage src={img_slug1} title="A slugcat showing basic tool use. It could probably use the tools found on this page too!" alt="Slugcat spearing a blue lizard." height=20%/>
+	</a>
+	<a href="https://rainworldgame.com/" target="_blank" rel="external">
+		<StaticImage src={img_slug2} title="More signs of intelligence from the slugcat species." alt="Vulture grub spawning a vulture." height=60%/>
+	</a>
+	
+	<BottomImage src={img_bleh} title="Hai :3" alt="Black anthro cat sticks tongue out." x=1in/>
+
 	<Header title="My Tools">
 		<HeaderButton href="/">Home</HeaderButton>
 		<HeaderButton href="langs">Languages</HeaderButton>

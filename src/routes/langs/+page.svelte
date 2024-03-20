@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Header from "$lib/header/header.svelte";
 	import Body from "$lib/core/body.svelte"
 	import HeaderButton from "$lib/buttons/headerButton.svelte";
@@ -9,11 +9,17 @@
 	import ExternalLink from "$lib/text/externalLink.svelte";
 	import Link from "$lib/text/link.svelte";
 	import PageData from "$lib/core/pageData.svelte";
+
+	import StaticImage from "$lib/images/staticImage.svelte";
+	import img_coding from "$lib/assets/coding.gif";
+	import Johnvertisement from "$lib/images/johnvertisement.svelte";
 </script>
 
 <PageData title="Ashli's Site - Languages" desc="A collection of languages I've developed." />
 
 <Body>
+	<StaticImage src={img_coding} title="Me making this site" alt="Woman types at a computer." height=20%/>
+
 	<Header title="My Languages">
 		<HeaderButton href="/">Home</HeaderButton>
 		<DisabledHeaderButton>Languages</DisabledHeaderButton>
@@ -59,5 +65,7 @@
 			The documentation may be found <ExternalLink href="https://esolangs.org/wiki/Bullshit">here</ExternalLink>.
 		</Paragraph>
 	</Pad>
+
+	<Johnvertisement />
 </Body>
 

@@ -29,17 +29,23 @@
 	import img_yumenikki from "$lib/assets/yumenikki.gif"
 	import img_jerma from "$lib/assets/jerma.gif"
 	import img_spotify from "$lib/assets/spotify.gif"
+	
 	import InlineCode from "$lib/text/inlineCode.svelte";
+	import StaticImage from "$lib/images/staticImage.svelte";
+	import img_cat_milk from "$lib/assets/milk.gif"
 </script>
 
 <PageData title="Ashli's Site" desc="Hello, I'm Ashli, and welcome to my site." />
 
 <Body>
+	<StaticImage src={img_cat_milk} title="Meee fr :3" alt="Cat drinking milk" height=20%/>
+
 	<Header title="Ashli's Site">
 		<DisabledHeaderButton>Home</DisabledHeaderButton>
 		<HeaderButton href="langs">Languages</HeaderButton>
 		<HeaderButton href="tools">Tools</HeaderButton>
 	</Header>
+
 
 	<Pad>
 		<Paragraph>
@@ -55,6 +61,7 @@
 		</Paragraph>
 
 		<HorizontalLine />
+		<br>
 
 		<div style="text-align: center;">
 			<!-- Political cards -->
@@ -88,7 +95,7 @@
 			<img src={img_imqueer} 				alt="I'm fucking queer" 											title="I am very, very gay">
 			<img src={img_likenya} 				alt="You know, like *nya*" 											title="Nyaaa <3 <3 <3">
 			<img src={img_lesbian} 				alt="Lesbian Pride" 												title="Girls I mean girls I mean girls I mean girls">
-			<img src={img_hyper} 				alt="Extended Hyper Enjoyer" 										title="Play celeste if you want to become a woman :3">
+			<img src={img_hyper} 				alt="Extended Hyper Enjoyer" 										title="Play celeste :3">
 			<img src={img_socks} 				alt="This site was made with programming socks" 					title="This site was built with blood, sweat, tears, and programming socks" style="max-width:100px;max-height:40px">
 			<img src={img_support} 				alt="I support trans artists - Credit encounters-ltd.neocities.org" title="I support trans artists" style="max-width:100px;max-height:40px">
 			

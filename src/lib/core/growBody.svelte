@@ -19,9 +19,11 @@
         height:100%;
         display:flex;
         flex-direction: column;
+        position: relative;
     }
 
     .mainContainer {
+        
         margin: 0px;
         padding: 0px;
         height: 100vh;

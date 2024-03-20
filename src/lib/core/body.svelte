@@ -8,6 +8,7 @@
     @import "../palette.scss";
 
     .body {
+        position: relative;
         background-color: $BODY_BACKGROUND_COLOR;
         margin: 2% 5%;
         padding: 10px;
