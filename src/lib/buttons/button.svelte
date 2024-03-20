@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { MouseEventHandler } from "svelte/elements";
 
-    export let click: MouseEventHandler<HTMLButtonElement>;
+    export let click: MouseEventHandler<HTMLButtonElement> | undefined = undefined;
     export let element: HTMLButtonElement | null = null;
 </script>
 

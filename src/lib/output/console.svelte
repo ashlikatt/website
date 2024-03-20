@@ -2,10 +2,11 @@
     import Pad from "$lib/text/pad.svelte";
 
     export let consoleElement: HTMLParagraphElement | undefined = undefined;
+    export let id: string = "console";
 </script>
 
 <div>
-    <p id="console" class="textoutput" bind:this={consoleElement} />
+    <p {id} class="textoutput" bind:this={consoleElement} />
 </div>
 
 <style lang="scss">
