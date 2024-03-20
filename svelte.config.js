@@ -16,7 +16,7 @@ const config = {
 
 		paths: {
 			base: dev ? '' : '/ashlikatt.github.io',
-			relative: true
+			relative: false
 		}	
 	}
 };
