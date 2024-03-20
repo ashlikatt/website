@@ -1,8 +1,11 @@
 <script lang="ts">
+    import { base } from "$app/paths";
+    
+    export let newPage : boolean = false;
     export let href: string;
 </script>
 
-<a {href}>
+<a href={`${base}/${href}`} target={newPage ? "_blank" : "_self"}>
     <button>
         <slot />
     </button>

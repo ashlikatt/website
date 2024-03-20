@@ -41,7 +41,7 @@
     <NoscriptWarning />
 
     <Header title="Minecraft Image Lore Generator">
-        <HeaderButton href="../tools">Back</HeaderButton>
+        <HeaderButton href="tools">Back</HeaderButton>
     </Header>
 
     <Columns>

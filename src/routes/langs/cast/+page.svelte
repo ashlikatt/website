@@ -34,7 +34,7 @@
     <NoscriptWarning />
 
     <Header title="Cast">
-        <HeaderButton href="../langs">Back</HeaderButton>
+        <HeaderButton href="langs">Back</HeaderButton>
         <ExternalHeaderButton href="https://esolangs.org/wiki/Cast">Reference</ExternalHeaderButton>
     </Header>
 

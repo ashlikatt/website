@@ -37,7 +37,7 @@
     <NoscriptWarning />
 
     <Header title="Map Planner">
-        <HeaderButton href="../tools">Back</HeaderButton>
+        <HeaderButton href="tools">Back</HeaderButton>
     </Header>
 
     <Columns>

@@ -29,7 +29,7 @@
     <NoscriptWarning />
 
     <Header title="Minecraft Skin Icon Generator">
-        <HeaderButton href="../tools">Back</HeaderButton>
+        <HeaderButton href="tools">Back</HeaderButton>
     </Header>
 
     <Columns>

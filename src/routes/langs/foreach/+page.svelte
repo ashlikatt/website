@@ -34,7 +34,7 @@
     <NoscriptWarning />
 
     <Header title="Foreach">
-        <HeaderButton href="../langs">Back</HeaderButton>
+        <HeaderButton href="langs">Back</HeaderButton>
         <ExternalHeaderButton href="https://esolangs.org/wiki/Foreach">Reference</ExternalHeaderButton>
     </Header>
 

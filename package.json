@@ -11,7 +11,7 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write .",
-		"gh-pages": "npm run build && npx gh-pages -d build"
+		"gh-pages": "npm run build && npx gh-pages --dist 'docs' --branch 'master' --nojekyll --cname 'www.ashli.dev' --repo 'git@github.com:ashlikatt/ashlikatt.github.io.git' --no-history"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.28.1",

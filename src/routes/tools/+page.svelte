@@ -31,7 +31,7 @@
 	<BottomImage src={img_bleh} title="Hai :3" alt="Black anthro cat sticks tongue out." x=1in/>
 
 	<Header title="My Tools">
-		<HeaderButton href="/">Home</HeaderButton>
+		<HeaderButton href="">Home</HeaderButton>
 		<HeaderButton href="langs">Languages</HeaderButton>
 		<DisabledHeaderButton>Tools</DisabledHeaderButton>
 	</Header>
@@ -92,7 +92,7 @@
 		<Paragraph>
 			This is technically one of my languages, however it's relevant for this section.
 			DFON is very similar to JSON in syntax. It is intended to be a way for DiamondFire plots to easily represent and compile constant data.
-			The documentation and compiler may be found <Link href="tools/dfon">here</Link>.
+			The documentation and compiler may be found <Link href="langs/dfon">here</Link>.
 		</Paragraph>
 	</Pad>
 </Body>

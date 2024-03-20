@@ -21,7 +21,7 @@
 	<StaticImage src={img_coding} title="Me making this site" alt="Woman types at a computer." height=20%/>
 
 	<Header title="My Languages">
-		<HeaderButton href="/">Home</HeaderButton>
+		<HeaderButton href="">Home</HeaderButton>
 		<DisabledHeaderButton>Languages</DisabledHeaderButton>
 		<HeaderButton href="tools">Tools</HeaderButton>
 	</Header>

@@ -15,7 +15,7 @@
 
 <Body>
     <Header title="DiamondFire Object Notation Reference">
-        <HeaderButton href="../dfon">Back</HeaderButton>
+        <HeaderButton href="langs/dfon">Back</HeaderButton>
     </Header>
 
     <Paragraph>

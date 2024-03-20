@@ -4,7 +4,6 @@
 	import NoscriptWarning from "$lib/core/noscriptWarning.svelte";
     import PageData from "$lib/core/pageData.svelte";
 	import Header from "$lib/header/header.svelte";
-    import ExternalHeaderButton from "$lib/buttons/externalHeaderButton.svelte";
 	import Rows from "$lib/format/rows.svelte";
 	import Sized from "$lib/format/sized.svelte";
 	import Console from "$lib/output/console.svelte";
@@ -26,8 +25,8 @@
     <NoscriptWarning />
 
     <Header title="DiamondFire Object Notation">
-        <HeaderButton href="../langs">Back</HeaderButton>
-        <ExternalHeaderButton href="./dfon/reference">Reference</ExternalHeaderButton> <!-- External so it opens a new page -->
+        <HeaderButton href="langs">Back</HeaderButton>
+        <HeaderButton href="langs/dfon/reference" newPage>Reference</HeaderButton> <!-- External so it opens a new page -->
     </Header>
 
     <Rows>

@@ -1,8 +1,12 @@
 <script lang="ts">
+    import { base } from "$app/paths";
+
+    export let newPage : boolean = false;
+
     export let href: string;
 </script>
 
-<a {href} rel="canonical">
+<a href={`${base}/${href}`} rel="canonical" target={newPage ? "_blank" : "_self"}>
     <slot />
 </a>
 

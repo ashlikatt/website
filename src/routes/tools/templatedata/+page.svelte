@@ -29,7 +29,7 @@
     <Alertbox id="alertBox" />
 
     <Header title="Template Editor">
-        <HeaderButton href="../tools">Back</HeaderButton>
+        <HeaderButton href="tools">Back</HeaderButton>
     </Header>
 
     
