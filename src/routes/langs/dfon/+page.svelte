@@ -27,7 +27,7 @@
 
     <Header title="DiamondFire Object Notation">
         <HeaderButton href="../langs">Back</HeaderButton>
-        <ExternalHeaderButton href="./reference">Reference</ExternalHeaderButton> <!-- External so it opens a new page -->
+        <ExternalHeaderButton href="./dfon/reference">Reference</ExternalHeaderButton> <!-- External so it opens a new page -->
     </Header>
 
     <Rows>

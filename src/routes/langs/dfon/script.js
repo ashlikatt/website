@@ -103,73 +103,9 @@ function getSize() {
 
 var initialCode;
 
-const autoComplete = {
-    "{": "}",
-    "[": "]",
-    "<": ">",
-    "(": ")",
-}
-
 // This converts tabs into spaces among other things https://stackoverflow.com/questions/6637341/use-tab-to-indent-in-textarea
 export function onLoad(e) {
     initialCode = document.getElementById("codebox").value
-
-    document.getElementById('codebox').addEventListener('keydown', function(e) {
-        const start = this.selectionStart;
-        const end = this.selectionEnd;
-
-        // Tab indents four spaces
-        if (e.key == 'Tab') {
-            e.preventDefault();
-            this.value = this.value.substring(0, start) + "    " + this.value.substring(end)
-      
-            this.selectionStart = this.selectionEnd = start + 4;
-            return  
-        }
-        
-        // Autocomplete brackets
-        if (autoComplete[e.key] !== undefined) {
-            const complete = autoComplete[e.key]
-
-            e.preventDefault();
-            if (this.selectionStart === this.selectionEnd) {
-                this.value = this.value.substring(0, start) + e.key + complete + this.value.substring(end)
-                this.selectionStart = this.selectionEnd = start + 1;
-            } else {
-                this.value = this.value.substring(0, start) + e.key + this.value.substring(start, end) + complete + this.value.substring(end)
-                this.selectionStart = start + 1;
-                this.selectionEnd = end + 1;
-            }
-            return
-        }
-
-        // Enter
-        if (e.key == "Enter" && this.selectionStart === this.selectionEnd) {
-            const before = this.value.substring(0, start)
-            
-            const trimmed = before.trimEnd()
-            const finalChar = trimmed.charAt(trimmed.length - 1)
-
-            e.preventDefault();
-            const after = this.value.substring(end)
-            const lines = before.split("\n")
-            const finalLine = lines[lines.length - 1]
-
-            if (finalChar === '{' || finalChar === '[' || finalChar === '(' || finalChar === '<') {
-                const indentAmount = finalLine.length - finalLine.trimLeft().length + 4
-
-                this.value = before + "\n" + " ".repeat(indentAmount) + "\n" + " ".repeat(indentAmount - 4) + after
-                this.selectionStart = this.selectionEnd = start + 1 + indentAmount
-            } else {
-                const indentAmount = finalLine.length - finalLine.trimLeft().length
-
-                this.value = before + "\n" + " ".repeat(indentAmount) + after
-                this.selectionStart = this.selectionEnd = start + 1 + indentAmount
-            }
-
-            return
-        }
-    });
 }
 
 // Confirm leaving page
