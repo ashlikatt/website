@@ -26,9 +26,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
 
-    - env:
-        SSH_AUTH_SOCK: /tmp/ssh_agent.sock
-      run: |
+    - run: |
         npm ci
         npm run build
 
