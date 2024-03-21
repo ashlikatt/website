@@ -19,11 +19,23 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm ci
-    - run: npm run build
-    - run: npx gh-pages --dist 'docs' --branch 'master' --nojekyll --cname 'www.ashli.dev' --repo 'git@github.com:ashlikatt/ashlikatt.github.io.git' --no-history
+
+    - env:
+        SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+      run: |
+        npm ci
+        npm run build
+
+    - name: Deploy
+      env:
+        SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+      run: |
+        ssh-agent -a $SSH_AUTH_SOCK > /dev/null
+        ssh-add "${{ secrets.DEPLOY_KEY }}"
+        npx gh-pages --dist 'docs' --branch 'master' --nojekyll --cname 'www.ashli.dev' --repo 'git@github.com:ashlikatt/ashlikatt.github.io.git' --no-history
