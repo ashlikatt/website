@@ -45,24 +45,28 @@
     </Header>
 
     <Columns>
-        <Rows>
-            <Sized size=19 padded>
-                <ImageInput name="Image File:" id="inputfile" bind:element={inputFileDOM} onUpdate={inputChanged}/>
-            </Sized>
-            <Sized size=1 padded>
-                <Button click={copyButton} bind:element={copyButtonDOM}>Copy Command</Button>
-            </Sized>    
-        </Rows>
-        <Rows>
-            <Sized size = 1 padded>
-                <RangeInput min=1 max=100 value=3 step=1 id="inputrange" name="Quality" bind:element={inputRangeDOM} onUpdate={inputChanged}/>
-            </Sized>
-            <Sized size = 18 padded>
-                <PixelDisplay id="pixelDisplay" bind:element={pixelDisplay}/>
-            </Sized>
-            <Sized size = 1 padded>
-                <Button click={recodeButton} bind:element={recodeButtonDOM}>Send to Recode</Button>
-            </Sized>
-        </Rows>
+        <Sized size=1>
+            <Rows>
+                <Sized size=19 padded>
+                    <ImageInput name="Image File:" id="inputfile" bind:element={inputFileDOM} onUpdate={inputChanged}/>
+                </Sized>
+                <Sized size=1 padded>
+                    <Button click={copyButton} bind:element={copyButtonDOM}>Copy Command</Button>
+                </Sized>    
+            </Rows>
+        </Sized>
+        <Sized size=1>
+            <Rows>
+                <Sized size = 1 padded>
+                    <RangeInput min=1 max=100 value=3 step=1 id="inputrange" name="Quality" bind:element={inputRangeDOM} onUpdate={inputChanged}/>
+                </Sized>
+                <Sized size = 18 padded>
+                    <PixelDisplay id="pixelDisplay" bind:element={pixelDisplay}/>
+                </Sized>
+                <Sized size = 1 padded>
+                    <Button click={recodeButton} bind:element={recodeButtonDOM}>Send to Recode</Button>
+                </Sized>
+            </Rows>
+        </Sized>
     </Columns>
 </GrowBody>
